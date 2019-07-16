@@ -26,7 +26,7 @@ namespace MyWebApiREST.Controllers
             return dbContext.Products.FirstOrDefault(p => p.ProductID == id);
         }
 
-        // api/products/create
+        // api/products
         [HttpPost]
         public IHttpActionResult CreateProduct([FromBody]Product product)
         {
@@ -42,7 +42,7 @@ namespace MyWebApiREST.Controllers
             }
         }
 
-        // api/products/create
+        // api/products
         [HttpPut]
         public IHttpActionResult UpdateProduct(int id, [FromBody]Product product)
         {
